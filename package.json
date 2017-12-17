@@ -2,10 +2,14 @@
   "name": "webpack-playground",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rimraf ./dist && webpack --config commons-chunk-plugin/one-entry-with-plugin/webpack.config.js"
   },
   "author": "Dominik Broj",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "^2.6.2",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {}
 }
